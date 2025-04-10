@@ -5,7 +5,6 @@ services:
     plan: free
     dockerfilePath: backend/Dockerfile
     buildCommand: ""
-    startCommand: "npm start"
     envVars:
       - key: DB_URI
         value: mongodb+srv://Mbarhou:comp313@hr-enterprise.lx2ox.mongodb.net/HR_db?retryWrites=true&w=majority&appName=HR-Enterprise
@@ -16,4 +15,3 @@ services:
     plan: free
     dockerfilePath: frontend/Dockerfile
     buildCommand: ""
-    startCommand: "nginx -g 'daemon off;'"

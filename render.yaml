@@ -7,8 +7,7 @@ services:
     buildContext: backend
     envVars:
       - key: DB_URI
-        sync: false  # Uses Render's dashboard value (NOT hardcoded)
-
+        sync: false
   - type: web
     name: hopper-ui
     env: docker

@@ -6,8 +6,9 @@ services:
     dockerfilePath: backend/Dockerfile
     buildCommand: ""
     envVars:
-      - key: DB_URI
-        value: mongodb+srv://Mbarhou:comp313@hr-enterprise.lx2ox.mongodb.net/HR_db?retryWrites=true&w=majority&appName=HR-Enterprise
+  - key: DB_URI
+    value: {{ env "DB_URI" }}
+
 
   - type: web
     name: hopper-ui

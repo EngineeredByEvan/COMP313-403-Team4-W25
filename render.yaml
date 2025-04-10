@@ -5,6 +5,7 @@ services:
     plan: free
     dockerfilePath: backend/Dockerfile
     buildContext: backend
+    startCommand: node server.js
     envVars:
       - key: DB_URI
         sync: false

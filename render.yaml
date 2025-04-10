@@ -4,15 +4,14 @@ services:
     env: docker
     plan: free
     dockerfilePath: backend/Dockerfile
-    buildCommand: ""
+    buildContext: backend
     envVars:
-  - key: DB_URI
-    value: {{ env "DB_URI" }}
-
+      - key: DB_URI
+        sync: false  # Uses Render's dashboard value (NOT hardcoded)
 
   - type: web
     name: hopper-ui
     env: docker
     plan: free
     dockerfilePath: frontend/Dockerfile
-    buildCommand: ""
+    buildContext: frontend

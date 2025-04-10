@@ -3,12 +3,12 @@ services:
     name: hopper-api
     env: docker
     plan: free
-    dockerfilePath: backend/Dockerfile
-    buildContext: backend
+    image: evanzo/hopper-api:latest
     startCommand: node server.js
     envVars:
       - key: DB_URI
         sync: false
+
   - type: web
     name: hopper-ui
     env: docker

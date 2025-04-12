@@ -20,7 +20,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Serve frontend static files
-const frontendPath = path.join(__dirname, 'public');
+const frontendPath = path.join(__dirname, 'public', 'browser');
 
 
 // Load environment variables

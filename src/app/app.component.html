@@ -1,0 +1,5 @@
+<router-outlet></router-outlet>
+
+<!-- User role-based chat components -->
+<app-employee-chat *ngIf="userService.getLoggedInUser()?.role === 'Employee'"></app-employee-chat>
+<app-hr-chat *ngIf="userService.getLoggedInUser()?.role === 'HR'"></app-hr-chat>

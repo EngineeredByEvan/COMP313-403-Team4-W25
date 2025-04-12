@@ -1,4 +1,4 @@
 export const environment = {
-    production: false,
-    apiUrl: 'http://localhost:3000/api'
-  };
+  production: true,
+  apiBaseUrl: 'https://hopper-backend.onrender.com/api' // <-- use correct backend URL once deployed
+};
